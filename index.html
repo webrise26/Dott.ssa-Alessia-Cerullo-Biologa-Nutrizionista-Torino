@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dott.ssa Alessia Cerullo – Biologa Nutrizionista | Torino</title>
+  <meta name="description" content="Dott.ssa Alessia Cerullo, Biologa Nutrizionista a Torino. Piani alimentari personalizzati, patologie metaboliche e ormonali. Studio in Via Piacenza 26/B. Prenota online." />
+  <meta name="keywords" content="nutrizionista torino, biologa nutrizionista torino, piano alimentare personalizzato, ovaio policistico, patologie metaboliche, nutrizione clinica torino" />
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Dott.ssa Alessia Cerullo – Biologa Nutrizionista | Torino" />
+  <meta property="og:description" content="Piani alimentari personalizzati a Torino. 5★ su Google. Specializzata in nutrizione clinica, patologie metaboliche e ormonali." />
+  <meta property="og:image"       content="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFO0uJN8sRTuVYbYSI4ABQF08ET-cvKIwKPLWDfdLQzWNSvf0iTrHDbASfDUA1oyC202ttB7FjqW44YvT1J23qo5_vguTrUwHhbZ93WQPtbvyJN6UmH7812xfE1TqU34vOO9E4CHYkm6Ro=w1200-h1600-k-no" />
+  <meta property="og:locale"      content="it_IT" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalBusiness","name":"Dott.ssa Alessia Cerullo – Biologa Nutrizionista","description":"Biologa Nutrizionista a Torino. Piani alimentari personalizzati e gestione patologie metaboliche.","telephone":"+393793506892","address":{"@type":"PostalAddress","streetAddress":"Via Piacenza 26/B","addressLocality":"Torino","postalCode":"10127","addressCountry":"IT"},"geo":{"@type":"GeoCoordinates","latitude":45.0193609,"longitude":7.6463714},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"5","bestRating":"5"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+  /* ═══════════════════════════════════════════
+     TOKENS & RESET
+  ═══════════════════════════════════════════ */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --sage:       #7a9c7e;
+    --sage-lt:    #a8c5aa;
+    --sage-dk:    #4f7053;
+    --beige:      #f5f0e8;
+    --beige-mid:  #ede5d5;
+    --beige-dk:   #d4c9b4;
+    --white:      #fafaf8;
+    --ink:        #2e2e2b;
+    --ink-muted:  #6b6b65;
+    --gold:       #c8a96e;
+    --wa:         #25D366;
+
+    --ff-serif: 'Cormorant Garamond', Georgia, serif;
+    --ff-sans:  'Jost', system-ui, sans-serif;
+
+    --sp:    clamp(4rem, 8vw, 7rem);
+    --wrap:  min(1140px, 92vw);
+    --r:     16px;
+    --sh:    0 4px 24px rgba(40,60,40,.09);
+    --sh-lg: 0 16px 56px rgba(40,60,40,.14);
+    --ease:  cubic-bezier(.4,0,.2,1);
+    --dur:   .55s;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: var(--beige); }
+  ::-webkit-scrollbar-thumb { background: var(--sage-lt); border-radius: 99px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--sage); }
+
+  body {
+    font-family: var(--ff-sans);
+    background: var(--white);
+    color: var(--ink);
+    line-height: 1.7;
+    overflow-x: hidden;
+    opacity: 0;
+    animation: pageIn .6s var(--ease) .1s forwards;
+  }
+  @keyframes pageIn { to { opacity: 1; } }
+
+  img { max-width: 100%; display: block; }
+  a   { color: inherit; text-decoration: none; }
+  button { font-family: var(--ff-sans); }
+
+  /* ═══════════════════════════════════════════
+     PROGRESS BAR
+  ═══════════════════════════════════════════ */
+  #progress {
+    position: fixed; top: 0; left: 0; z-index: 200;
+    height: 3px; width: 0%;
+    background: linear-gradient(90deg, var(--sage-dk), var(--sage-lt));
+    transition: width .1s linear;
+    pointer-events: none;
+  }
+
+  /* ═══════════════════════════════════════════
+     LAYOUT
+  ═══════════════════════════════════════════ */
+  .container { width: var(--wrap); margin-inline: auto; }
+
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease); }
+  .reveal.visible { opacity: 1; transform: none; }
+  .d1 { transition-delay: .1s; } .d2 { transition-delay: .2s; }
+  .d3 { transition-delay: .3s; } .d4 { transition-delay: .4s; }
+
+  /* ═══════════════════════════════════════════
+     TYPOGRAPHY SYSTEM
+  ═══════════════════════════════════════════ */
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: .6rem;
+    font-size: .7rem; font-weight: 500; letter-spacing: .2em;
+    text-transform: uppercase; color: var(--sage);
+  }
+  .eyebrow::before { content:''; display:block; width:28px; height:1px; background:var(--sage); }
+  .eyebrow.center  { justify-content: center; }
+  .eyebrow.center::before  { display: none; }
+  .eyebrow.center::after   { content:''; display:block; width:28px; height:1px; background:var(--sage); }
+
+  .display {
+    font-family: var(--ff-serif);
+    font-size: clamp(2.4rem, 4.5vw, 3.6rem);
+    font-weight: 300; line-height: 1.12; color: var(--ink);
+  }
+  .display em { font-style: italic; color: var(--sage-dk); }
+
+  .lead {
+    font-size: .95rem; font-weight: 300;
+    color: var(--ink-muted); line-height: 1.85; max-width: 52ch;
+  }
+
+  .sec-head { margin-bottom: clamp(2.5rem,5vw,4rem); }
+  .sec-head.center { text-align: center; }
+  .sec-head.center .lead { margin-inline: auto; }
+
+  /* ═══════════════════════════════════════════
+     BUTTONS
+  ═══════════════════════════════════════════ */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+    padding: .9rem 1.8rem; border-radius: 99px;
+    font-size: .85rem; font-weight: 500; letter-spacing: .06em;
+    border: none; cursor: pointer; transition: transform .2s var(--ease), box-shadow .25s var(--ease), background .2s;
+  }
+  .btn:hover { transform: translateY(-2px); }
+  .btn-sage  { background: var(--sage-dk); color: var(--white); box-shadow: 0 4px 18px rgba(79,112,83,.28); }
+  .btn-sage:hover  { background: var(--sage); box-shadow: 0 8px 28px rgba(79,112,83,.32); }
+  .btn-wa    { background: var(--wa); color: var(--white); box-shadow: 0 4px 18px rgba(37,211,102,.28); }
+  .btn-wa:hover    { background: #1ebe5d; box-shadow: 0 8px 28px rgba(37,211,102,.34); }
+  .btn-ghost {
+    background: none; color: var(--sage-dk);
+    border: 1.5px solid rgba(79,112,83,.35); padding: .85rem 1.6rem;
+  }
+  .btn-ghost:hover { border-color: var(--sage-dk); background: rgba(79,112,83,.04); }
+  .btn-outline-wa {
+    background: rgba(37,211,102,.1); color: #1a9e52;
+    border: 1.5px solid rgba(37,211,102,.3);
+  }
+  .btn-outline-wa:hover { background: rgba(37,211,102,.18); border-color: var(--wa); }
+
+  /* ═══════════════════════════════════════════
+     NAV
+  ═══════════════════════════════════════════ */
+  nav {
+    position: fixed; inset: 0 0 auto; z-index: 100;
+    background: rgba(250,250,248,.95);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(122,156,126,.12);
+    transition: box-shadow .3s;
+  }
+  nav.scrolled { box-shadow: 0 2px 20px rgba(40,60,40,.08); }
+
+  .nav-in {
+    display: flex; align-items: center; justify-content: space-between;
+    height: 68px; width: var(--wrap); margin-inline: auto;
+  }
+  .nav-brand strong { font-family: var(--ff-serif); font-size: 1.1rem; font-weight: 600; color: var(--sage-dk); display: block; }
+  .nav-brand span   { font-size: .68rem; font-weight: 300; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-muted); }
+
+  .nav-links { display: flex; gap: 1.8rem; list-style: none; align-items: center; }
+  .nav-links a { font-size: .78rem; font-weight: 400; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-muted); transition: color .2s; }
+  .nav-links a:hover { color: var(--sage-dk); }
+  .nav-links .cta { background: var(--sage-dk); color: var(--white) !important; padding: .5rem 1.2rem; border-radius: 99px; font-weight: 500; transition: background .2s, transform .2s !important; }
+  .nav-links .cta:hover { background: var(--sage) !important; transform: translateY(-1px); }
+
+  .hamburger { display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:4px; }
+  .hamburger span { display:block; width:24px; height:2px; background:var(--sage-dk); border-radius:2px; transition:.3s; }
+
+  @media(max-width:768px){
+    .nav-links {
+      position:fixed; inset:68px 0 0;
+      background:rgba(250,250,248,.98);
+      flex-direction:column; align-items:center; justify-content:center; gap:2.5rem;
+      transform:translateX(100%); transition:transform .35s var(--ease);
+    }
+    .nav-links.open { transform:none; }
+    .nav-links a { font-size:1rem; }
+    .hamburger { display:flex; }
+    .nav-brand span { display:none; }
+  }
+
+  /* ═══════════════════════════════════════════
+     HERO
+  ═══════════════════════════════════════════ */
+  #hero {
+    min-height: 100svh; padding-top: 68px;
+    display: grid; grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background: linear-gradient(135deg, var(--beige) 0%, var(--white) 55%);
+    position: relative; overflow: hidden;
+  }
+  #hero::before {
+    content:''; position:absolute; inset:0; pointer-events:none;
+    background: radial-gradient(ellipse 55% 70% at 75% 50%, rgba(122,156,126,.12) 0%, transparent 65%),
+                radial-gradient(ellipse 35% 50% at 15% 85%, rgba(200,169,110,.08) 0%, transparent 55%);
+  }
+
+  .hero-copy {
+    padding: var(--sp) 0 var(--sp) max(1rem, calc((100vw - 1140px)/2 + 4vw));
+    position: relative; z-index: 1;
+  }
+  .hero-h1 {
+    font-family: var(--ff-serif);
+    font-size: clamp(2.8rem, 5.5vw, 4.6rem);
+    font-weight: 300; line-height: 1.1; color: var(--ink);
+    margin: 1.2rem 0 1.4rem;
+  }
+  .hero-h1 em { font-style: italic; color: var(--sage-dk); }
+  .hero-sub { font-size: .97rem; font-weight: 300; color: var(--ink-muted); max-width: 40ch; line-height: 1.85; margin-bottom: 2.4rem; }
+
+  .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+  .hero-trust {
+    display: flex; align-items: center; gap: .6rem;
+    margin-top: 2.2rem; font-size: .78rem; color: var(--ink-muted);
+  }
+  .hero-trust .stars { display:flex; gap:2px; }
+  .hero-trust .stars span { color: var(--gold); }
+
+  /* Hero card col */
+  .hero-img-col {
+    display: flex; align-items: center; justify-content: center;
+    align-self: stretch; min-height: 500px;
+    padding: 2rem max(1rem, calc((100vw - 1140px)/2 + 3vw)) 2rem 1rem;
+    position: relative; z-index: 1;
+  }
+  .hero-img-wrap { position: relative; width: min(420px, 92%); }
+
+  .hero-img-blob {
+    width: 100%; min-height: 500px; aspect-ratio: 4/5;
+    border-radius: 40% 60% 55% 45% / 45% 45% 55% 55%;
+    overflow: hidden; position: relative;
+    background: linear-gradient(145deg, var(--sage-lt), var(--sage-dk));
+  }
+  .hero-img-blob::after {
+    content:''; position:absolute; inset:0; pointer-events:none;
+    background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(255,255,255,.22) 0%, transparent 60%),
+                radial-gradient(ellipse 50% 80% at 100% 100%, rgba(40,70,40,.25) 0%, transparent 50%);
+  }
+  /* Foglia flottante nell'hero card */
+  @keyframes floatLeaf {
+    0%,100% { transform: translateY(0) rotate(0deg); }
+    50%      { transform: translateY(-14px) rotate(3deg); }
+  }
+  .hero-leaf { animation: floatLeaf 7s ease-in-out infinite; }
+
+  .hero-badge {
+    position:absolute; bottom:-1.2rem; left:-1.5rem;
+    background:var(--white); border-radius:var(--r); padding:.9rem 1.2rem;
+    box-shadow:var(--sh-lg); display:flex; align-items:center; gap:.7rem;
+    min-width: 190px;
+  }
+  .hero-badge-ico { width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--beige),var(--beige-mid));display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0; }
+  .hero-badge strong { display:block;font-family:var(--ff-serif);font-size:.95rem;font-weight:600;color:var(--sage-dk);line-height:1.2; }
+  .hero-badge span { font-size:.68rem;color:var(--ink-muted);font-weight:300; }
+
+  .hero-tag {
+    position:absolute; top:1.5rem; right:-1rem;
+    background:var(--sage-dk); color:var(--white);
+    font-size:.65rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;
+    padding:.45rem .9rem; border-radius:99px;
+    box-shadow:0 4px 14px rgba(79,112,83,.35);
+  }
+
+  @media(max-width:900px){
+    #hero { grid-template-columns:1fr; min-height:auto; padding-top:100px; }
+    .hero-img-col { order:-1; padding:2rem 5vw 1rem; min-height:320px; align-self:auto; justify-content:center; }
+    .hero-img-blob { min-height:300px; }
+    .hero-img-wrap { width:min(300px,85%); }
+    .hero-tag { display:none; }
+    .hero-badge { left:0; bottom:-1rem; min-width:unset; }
+    .hero-copy { padding:2rem 5vw 3rem; }
+    .hero-btns { flex-direction:column; }
+    .hero-btns .btn { justify-content:center; }
+  }
+
+  /* ═══════════════════════════════════════════
+     STATS BAR
+  ═══════════════════════════════════════════ */
+  #stats {
+    background: var(--sage-dk);
+    padding: 2.8rem 0;
+  }
+  .stats-grid {
+    display: grid; grid-template-columns: repeat(4,1fr);
+    gap: 2rem; text-align: center;
+  }
+  .stat-item {}
+  .stat-num {
+    font-family: var(--ff-serif); font-size: clamp(2rem,3.5vw,2.8rem);
+    font-weight: 600; color: var(--white); line-height: 1; display: block;
+    margin-bottom: .3rem;
+  }
+  .stat-lbl { font-size: .72rem; font-weight: 300; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.65); }
+  @media(max-width:600px){ .stats-grid { grid-template-columns:1fr 1fr; gap:1.5rem; } }
+
+  /* ═══════════════════════════════════════════
+     CHI SONO
+  ═══════════════════════════════════════════ */
+  #chi-sono { padding: var(--sp) 0; background: var(--white); }
+
+  .chi-grid { display:grid; grid-template-columns:1fr 1fr; gap:clamp(3rem,6vw,6rem); align-items:center; }
+
+  .chi-frame-wrap { position:relative; }
+  .chi-frame {
+    width:100%; aspect-ratio:3/4; max-width:380px;
+    border-radius:50% 50% 48% 52% / 40% 40% 60% 60%;
+    overflow:hidden;
+    background:linear-gradient(165deg,var(--beige),var(--beige-mid));
+  }
+  .chi-frame img { width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform .6s var(--ease); }
+  .chi-frame:hover img { transform:scale(1.04); }
+
+  .chi-bio { font-size:.93rem;font-weight:300;color:var(--ink-muted);line-height:1.9;margin-bottom:1.2rem; }
+  .tag-row { display:flex;flex-wrap:wrap;gap:.45rem;margin-top:1.6rem; }
+  .tag { background:var(--beige);color:var(--sage-dk);padding:.38rem .9rem;border-radius:99px;font-size:.75rem;font-weight:400;border:1px solid var(--beige-dk);transition:background .2s,border-color .2s; }
+  .tag:hover { background:var(--beige-mid);border-color:var(--sage-lt); }
+
+  @media(max-width:768px){ .chi-grid { grid-template-columns:1fr; } .chi-frame-wrap { max-width:260px;margin-inline:auto; } }
+
+  /* ═══════════════════════════════════════════
+     SERVIZI
+  ═══════════════════════════════════════════ */
+  #servizi { padding:var(--sp) 0; background:var(--beige); }
+
+  .servizi-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1.4rem; }
+
+  .svc-card {
+    background:var(--white); border-radius:var(--r); padding:2rem 1.8rem;
+    box-shadow:0 2px 16px rgba(40,60,40,.06); border:1px solid rgba(122,156,126,.1);
+    transition:transform .3s var(--ease),box-shadow .3s; position:relative; overflow:hidden;
+  }
+  .svc-card::after {
+    content:''; position:absolute; top:0;left:0;right:0; height:3px;
+    background:linear-gradient(90deg,var(--sage-dk),var(--sage-lt));
+    transform:scaleX(0); transform-origin:left; transition:transform .35s var(--ease);
+  }
+  .svc-card:hover { transform:translateY(-5px); box-shadow:var(--sh-lg); }
+  .svc-card:hover::after { transform:scaleX(1); }
+
+  .svc-ico { width:50px;height:50px;border-radius:13px;background:linear-gradient(135deg,var(--beige),var(--beige-mid));display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:1.2rem; }
+  .svc-card h3 { font-family:var(--ff-serif);font-size:1.18rem;font-weight:500;margin-bottom:.5rem; }
+  .svc-card p  { font-size:.85rem;font-weight:300;color:var(--ink-muted);line-height:1.8; }
+
+  /* ═══════════════════════════════════════════
+     PERCORSO
+  ═══════════════════════════════════════════ */
+  #percorso { padding:var(--sp) 0; background:var(--white); }
+
+  .steps-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1.5rem; position:relative; }
+  .steps-grid::before {
+    content:''; position:absolute; top:27px;
+    left:calc(12.5% + 1rem); right:calc(12.5% + 1rem);
+    height:2px; background:linear-gradient(90deg,var(--sage-lt),var(--sage)); z-index:0;
+  }
+  .step { display:flex;flex-direction:column;align-items:center;text-align:center;position:relative;z-index:1; }
+  .step-n {
+    width:54px;height:54px;border-radius:50%;
+    background:var(--white);border:2px solid var(--sage);
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--ff-serif);font-size:1.2rem;font-weight:600;color:var(--sage-dk);
+    margin-bottom:1.1rem; box-shadow:0 4px 14px rgba(79,112,83,.12);
+    transition:background .3s,color .3s;
+  }
+  .step:hover .step-n { background:var(--sage);color:var(--white); }
+  .step h4 { font-family:var(--ff-serif);font-size:1rem;font-weight:500;margin-bottom:.4rem; }
+  .step p  { font-size:.82rem;font-weight:300;color:var(--ink-muted);line-height:1.7; }
+
+  @media(max-width:768px){ .steps-grid{grid-template-columns:1fr 1fr;} .steps-grid::before{display:none;} }
+  @media(max-width:480px){ .steps-grid{grid-template-columns:1fr;} }
+
+  /* ═══════════════════════════════════════════
+     APPROCCIO
+  ═══════════════════════════════════════════ */
+  #approccio { padding:var(--sp) 0; background:var(--beige); }
+
+  .appr-grid { display:grid;grid-template-columns:1fr 1fr;gap:clamp(3rem,6vw,6rem);align-items:center; }
+
+  .appr-list { display:flex;flex-direction:column;gap:1.8rem;margin-top:2rem; }
+  .appr-item { display:flex;gap:1.2rem;align-items:flex-start; }
+  .appr-num { flex-shrink:0;width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--sage),var(--sage-lt));color:var(--white);display:flex;align-items:center;justify-content:center;font-family:var(--ff-serif);font-size:.95rem;font-weight:600; }
+  .appr-item h4 { font-family:var(--ff-serif);font-size:1.05rem;font-weight:500;margin-bottom:.3rem; }
+  .appr-item p  { font-size:.85rem;font-weight:300;color:var(--ink-muted);line-height:1.8; }
+
+  .appr-quote {
+    background:linear-gradient(145deg,var(--sage-dk),var(--sage));
+    color:var(--white); border-radius:24px; padding:clamp(2rem,4vw,3rem);
+    position:relative; overflow:hidden;
+  }
+  .appr-quote::before {
+    content:'"'; position:absolute; top:-1.5rem;left:1.5rem;
+    font-family:var(--ff-serif);font-size:11rem;line-height:1;
+    color:rgba(255,255,255,.08); pointer-events:none;
+  }
+  .appr-quote blockquote { font-family:var(--ff-serif);font-size:clamp(1.2rem,2.5vw,1.6rem);font-weight:300;font-style:italic;line-height:1.5;position:relative;z-index:1;margin-bottom:1.2rem; }
+  .appr-quote cite { font-size:.75rem;font-weight:300;letter-spacing:.12em;text-transform:uppercase;opacity:.7;font-style:normal; }
+  .appr-chips { display:flex;flex-wrap:wrap;gap:.45rem;margin-top:1.8rem; }
+  .chip { background:rgba(255,255,255,.14);color:var(--white);padding:.3rem .85rem;border-radius:99px;font-size:.7rem;letter-spacing:.08em;border:1px solid rgba(255,255,255,.2); }
+
+  @media(max-width:768px){ .appr-grid{grid-template-columns:1fr;} }
+
+  /* ═══════════════════════════════════════════
+     RECENSIONI
+  ═══════════════════════════════════════════ */
+  #recensioni { padding:var(--sp) 0; background:var(--white); }
+
+  .google-badge {
+    display:inline-flex;align-items:center;gap:.7rem;
+    background:var(--white);border:1px solid var(--beige-dk);
+    border-radius:99px;padding:.55rem 1.1rem;
+    box-shadow:0 2px 10px rgba(0,0,0,.06);
+    font-size:.76rem;font-weight:400;color:var(--ink-muted);
+    margin-top:.8rem;
+  }
+  .g-logo { display:flex;gap:1px;font-weight:700;font-size:.85rem; }
+  .gb { color:#4285F4; } .gr { color:#EA4335; } .gy { color:#FBBC05; } .gg { color:#34A853; }
+
+  .rec-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem; }
+
+  .rec-card {
+    background:var(--beige);border-radius:var(--r);padding:2rem;
+    border:1px solid var(--beige-dk); display:flex;flex-direction:column;gap:1rem;
+    transition:transform .3s var(--ease),box-shadow .3s;
+  }
+  .rec-card:hover { transform:translateY(-4px);box-shadow:var(--sh); }
+  .rec-stars { display:flex;gap:2px; }
+  .rec-stars span { color:var(--gold);font-size:.95rem; }
+  .rec-text { font-family:var(--ff-serif);font-size:1rem;font-weight:400;font-style:italic;color:var(--ink);line-height:1.7;flex:1; }
+  .rec-author { display:flex;align-items:center;gap:.8rem;padding-top:.8rem;border-top:1px solid var(--beige-mid); }
+  .rec-avatar { width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--sage-lt),var(--sage));display:flex;align-items:center;justify-content:center;font-family:var(--ff-serif);font-size:.95rem;font-weight:600;color:var(--white);flex-shrink:0; }
+  .rec-author strong { display:block;font-size:.83rem;font-weight:500; }
+  .rec-author span   { font-size:.7rem;font-weight:300;color:var(--ink-muted); }
+
+  @media(max-width:768px){ .rec-grid{grid-template-columns:1fr;} }
+
+  /* ═══════════════════════════════════════════
+     PRENOTA — CALENDARIO
+  ═══════════════════════════════════════════ */
+  #prenota { padding:var(--sp) 0; background:var(--beige); }
+
+  .prenota-grid { display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:start; }
+
+  .cal-wrap { background:var(--white);border:1px solid var(--beige-dk);border-radius:20px;overflow:hidden;box-shadow:var(--sh); }
+  .cal-head { background:var(--sage-dk);color:var(--white);display:flex;align-items:center;justify-content:space-between;padding:1.2rem 1.5rem; }
+  .cal-head h3 { font-family:var(--ff-serif);font-size:1.05rem;font-weight:400; }
+  .cal-nav-btn { background:none;border:none;color:var(--white);cursor:pointer;padding:.4rem .6rem;border-radius:8px;font-size:1.2rem;line-height:1;transition:background .2s; }
+  .cal-nav-btn:hover { background:rgba(255,255,255,.15); }
+
+  .cal-grid { display:grid;grid-template-columns:repeat(7,1fr);padding:.9rem .9rem 0;gap:3px; }
+  .cal-dow { text-align:center;font-size:.62rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-muted);padding:.35rem 0; }
+  .cal-day {
+    aspect-ratio:1;display:flex;align-items:center;justify-content:center;
+    border-radius:9px;font-size:.83rem;font-weight:400;cursor:pointer;
+    transition:background .2s,color .2s;border:1.5px solid transparent;
+    color:var(--ink);position:relative;
+  }
+  .cal-day:hover:not(.dis):not(.emp) { background:var(--beige);border-color:var(--sage-lt); }
+  .cal-day.today   { border-color:var(--sage-lt);color:var(--sage-dk);font-weight:600; }
+  .cal-day.sel     { background:var(--sage-dk);color:var(--white)!important;border-color:var(--sage-dk); }
+  .cal-day.dis     { color:var(--beige-dk);cursor:not-allowed; }
+  .cal-day.emp     { cursor:default; }
+  .cal-day.avail::after { content:'';display:block;position:absolute;bottom:3px;left:50%;transform:translateX(-50%);width:4px;height:4px;border-radius:50%;background:var(--sage); }
+
+  .slots-box { padding:.9rem 1rem 1.1rem;border-top:1px solid var(--beige-mid); }
+  .slots-lbl { font-size:.68rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-muted);margin-bottom:.7rem; }
+  .slots-row { display:flex;flex-wrap:wrap;gap:.45rem; }
+  .slot {
+    background:var(--beige);color:var(--ink);border:1.5px solid var(--beige-dk);
+    border-radius:8px;padding:.4rem .8rem;font-family:var(--ff-sans);font-size:.8rem;font-weight:400;
+    cursor:pointer;transition:background .2s,border-color .2s,color .2s;
+  }
+  .slot:hover { background:var(--beige-mid);border-color:var(--sage-lt); }
+  .slot.sel   { background:var(--sage);border-color:var(--sage);color:var(--white); }
+
+  /* Booking form */
+  .bform-wrap { background:var(--white);border-radius:20px;padding:clamp(1.8rem,4vw,2.6rem);border:1px solid var(--beige-dk);box-shadow:var(--sh); }
+  .bform-wrap h3 { font-family:var(--ff-serif);font-size:1.5rem;font-weight:400;margin-bottom:.3rem; }
+  .bform-wrap h3 em { color:var(--sage-dk);font-style:italic; }
+  .bform-sub { font-size:.83rem;font-weight:300;color:var(--ink-muted);margin-bottom:1.3rem; }
+
+  .bsummary {
+    background:var(--beige);border-radius:12px;padding:.85rem 1rem;
+    border:1px solid var(--beige-dk);margin-bottom:1.3rem;
+    display:flex;flex-direction:column;gap:.3rem;
+  }
+  .bsummary span { font-size:.82rem;color:var(--ink-muted);display:flex;align-items:center;gap:.5rem; }
+  .bsummary strong { color:var(--ink);font-weight:500; }
+
+  .fgrid { display:grid;grid-template-columns:1fr 1fr;gap:.75rem; }
+  .fgrid .full { grid-column:1/-1; }
+  .ff { display:flex;flex-direction:column;gap:.3rem; }
+  .ff label { font-size:.67rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-muted); }
+  .ff input,.ff select,.ff textarea {
+    width:100%;padding:.7rem .95rem;border:1.5px solid var(--beige-dk);border-radius:10px;
+    background:var(--beige);font-family:var(--ff-sans);font-size:.86rem;font-weight:300;
+    color:var(--ink);outline:none;transition:border-color .25s,box-shadow .25s,background .2s;
+    -webkit-appearance:none;appearance:none;
+  }
+  .ff input:focus,.ff select:focus,.ff textarea:focus {
+    border-color:var(--sage);box-shadow:0 0 0 3px rgba(122,156,126,.14);background:var(--white);
+  }
+  .ff textarea { resize:vertical;min-height:80px; }
+  .ff select {
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b6b65' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;background-position:right 1rem center;padding-right:2.5rem;cursor:pointer;
+  }
+
+  @media(max-width:900px){ .prenota-grid{grid-template-columns:1fr;} }
+  @media(max-width:500px){ .fgrid{grid-template-columns:1fr;} }
+
+  /* ═══════════════════════════════════════════
+     FAQ
+  ═══════════════════════════════════════════ */
+  #faq { padding:var(--sp) 0; background:var(--white); }
+  .faq-list { max-width:760px;margin-inline:auto;display:flex;flex-direction:column;gap:.65rem; }
+
+  .faq-item { background:var(--beige);border-radius:14px;border:1px solid var(--beige-dk);overflow:hidden;transition:box-shadow .3s; }
+  .faq-item:hover { box-shadow:var(--sh); }
+  .faq-q { width:100%;background:none;border:none;display:flex;align-items:center;justify-content:space-between;padding:1.2rem 1.4rem;cursor:pointer;text-align:left;gap:1rem; }
+  .faq-q-text { font-family:var(--ff-serif);font-size:1.05rem;font-weight:500;color:var(--ink);line-height:1.35; }
+  .faq-ico { flex-shrink:0;width:28px;height:28px;border-radius:50%;background:var(--white);display:flex;align-items:center;justify-content:center;color:var(--sage-dk);font-size:1.1rem;transition:background .25s,transform .35s; }
+  .faq-item.open .faq-ico { background:var(--sage);color:var(--white);transform:rotate(45deg); }
+  .faq-a { max-height:0;overflow:hidden;transition:max-height .4s var(--ease); }
+  .faq-a p { font-size:.88rem;font-weight:300;color:var(--ink-muted);line-height:1.85;padding:0 1.4rem 1.2rem; }
+  .faq-item.open .faq-a { max-height:300px; }
+
+  /* ═══════════════════════════════════════════
+     CONTATTI
+  ═══════════════════════════════════════════ */
+  #contatti { padding:var(--sp) 0; background:var(--beige); }
+
+  .contatti-grid { display:grid;grid-template-columns:1fr 1fr;gap:clamp(3rem,6vw,5rem);align-items:start; }
+
+  .info-list { display:flex;flex-direction:column;gap:1.3rem;margin-top:2rem; }
+  .info-row { display:flex;align-items:flex-start;gap:1rem; }
+  .info-ico { width:44px;height:44px;border-radius:12px;background:var(--white);border:1px solid var(--beige-dk);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0; }
+  .info-row strong { display:block;font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-muted);margin-bottom:.18rem; }
+  .info-row p { font-size:.9rem;font-weight:300;color:var(--ink);line-height:1.5; }
+  .info-row a { color:var(--sage-dk);font-weight:500;transition:color .2s; }
+  .info-row a:hover { color:var(--sage); }
+
+  .map-wrap { border-radius:20px;overflow:hidden;height:360px;box-shadow:var(--sh);border:1px solid var(--beige-dk); }
+  .map-wrap iframe { width:100%;height:100%;border:0;display:block;filter:saturate(.85) contrast(.95); }
+
+  .cta-card { background:var(--sage-dk);border-radius:20px;padding:2rem;text-align:center;margin-top:2rem; }
+  .cta-card p { color:rgba(255,255,255,.75);font-size:.85rem;font-weight:300;margin:.5rem 0 1.4rem; }
+  .cta-card .btn-wa,.cta-card .btn-ghost { width:100%;margin-bottom:.6rem; }
+  .cta-card .btn-ghost { border-color:rgba(255,255,255,.3);color:var(--white); }
+  .cta-card .btn-ghost:hover { background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.6); }
+
+  @media(max-width:768px){ .contatti-grid{grid-template-columns:1fr;} .map-wrap{height:260px;} }
+
+  /* ═══════════════════════════════════════════
+     FOOTER
+  ═══════════════════════════════════════════ */
+  footer { background:var(--ink);color:rgba(255,255,255,.7);padding:4rem 0 2rem; }
+  .footer-grid { display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.08); }
+  .footer-brand { font-family:var(--ff-serif);font-size:1.3rem;font-weight:300;color:var(--white);margin-bottom:.7rem; }
+  .footer-tagline { font-size:.82rem;font-weight:300;color:rgba(255,255,255,.5);line-height:1.7; }
+  .footer-col h4 { font-size:.7rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:1rem; }
+  .footer-col ul { list-style:none;display:flex;flex-direction:column;gap:.55rem; }
+  .footer-col ul a { font-size:.82rem;font-weight:300;color:rgba(255,255,255,.6);transition:color .2s; }
+  .footer-col ul a:hover { color:var(--white); }
+  .footer-bottom { display:flex;align-items:center;justify-content:space-between;padding-top:1.8rem;flex-wrap:wrap;gap:.5rem; }
+  .footer-copy { font-size:.7rem;color:rgba(255,255,255,.35); }
+  .footer-wa { display:inline-flex;align-items:center;gap:.5rem;background:var(--wa);color:var(--white);padding:.45rem 1rem;border-radius:99px;font-size:.75rem;font-weight:500;transition:background .2s,transform .2s; }
+  .footer-wa:hover { background:#1ebe5d;transform:translateY(-1px); }
+  @media(max-width:700px){ .footer-grid{grid-template-columns:1fr;gap:2rem;} .footer-bottom{flex-direction:column;align-items:flex-start;} }
+
+  /* ═══════════════════════════════════════════
+     FLOATING WA + SCROLL TOP
+  ═══════════════════════════════════════════ */
+  .wa-float {
+    position:fixed;bottom:2rem;left:2rem;z-index:90;
+    display:flex;align-items:center;gap:.55rem;
+    background:var(--wa);color:var(--white);
+    padding:.72rem 1.15rem;border-radius:99px;
+    font-family:var(--ff-sans);font-size:.8rem;font-weight:500;
+    box-shadow:0 6px 22px rgba(37,211,102,.4);
+    transition:background .25s,transform .2s,box-shadow .25s;
+    animation:waPulse 2.8s ease-in-out infinite;
+  }
+  .wa-float:hover { background:#1ebe5d;transform:translateY(-2px);animation:none;box-shadow:0 10px 30px rgba(37,211,102,.45); }
+  @keyframes waPulse { 0%,100%{box-shadow:0 6px 22px rgba(37,211,102,.4)} 50%{box-shadow:0 6px 30px rgba(37,211,102,.65)} }
+
+  .scroll-top {
+    position:fixed;bottom:2rem;right:2rem;z-index:90;
+    width:44px;height:44px;border-radius:50%;background:var(--sage);color:var(--white);
+    border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;
+    box-shadow:0 4px 14px rgba(79,112,83,.35);
+    opacity:0;transform:translateY(10px);transition:opacity .3s,transform .3s,background .2s;
+  }
+  .scroll-top.vis { opacity:1;transform:none; }
+  .scroll-top:hover { background:var(--sage-dk); }
+
+  @media(max-width:600px){
+    .wa-float span { display:none; }
+    .wa-float { padding:.85rem;border-radius:50%;left:1.2rem;bottom:1.2rem; }
+    .scroll-top { right:1.2rem;bottom:1.2rem; }
+    nav { background:rgba(250,250,248,1)!important;backdrop-filter:none; }
+    .chi-sono-stat { display:none; }
+  }
+
+  /* ── Touch targets ── */
+  @media(hover:none){
+    .btn,.slot,.cal-nav-btn,.faq-q { min-height:44px; }
+    .nav-links a { min-height:44px;display:flex;align-items:center; }
+  }
+  </style>
+</head>
+<body>
+
+  <div id="progress"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-in">
+      <a href="#hero" class="nav-brand">
+        <strong>Dott.ssa Alessia Cerullo</strong>
+        <span>Biologa Nutrizionista · Torino</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#chi-sono">Chi sono</a></li>
+        <li><a href="#servizi">Servizi</a></li>
+        <li><a href="#approccio">Metodo</a></li>
+        <li><a href="#recensioni">Recensioni</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#prenota" class="cta">Prenota</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">Biologa Nutrizionista · Torino</p>
+      <h1 class="hero-h1">
+        Nutrizione su misura<br/>
+        per il tuo <em>benessere</em><br/>
+        autentico
+      </h1>
+      <p class="hero-sub">Percorsi nutrizionali personalizzati per migliorare la salute, ritrovare l'energia e vivere in equilibrio con il proprio corpo. Un supporto clinico, continuo e profondamente umano.</p>
+      <div class="hero-btns">
+        <a href="#prenota" class="btn btn-sage">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Prenota una visita
+        </a>
+        <a href="#chi-sono" class="btn btn-ghost">Scopri di più</a>
+      </div>
+      <div class="hero-trust">
+        <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <span>5,0 su Google · 5 recensioni verificate</span>
+      </div>
+    </div>
+
+    <div class="hero-img-col reveal d2">
+      <div class="hero-img-wrap">
+        <div class="hero-img-blob">
+          <svg class="hero-leaf" style="position:absolute;inset:0;width:100%;height:100%;opacity:.38" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+            <!-- stem -->
+            <path d="M200 480 Q196 300 200 95" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <!-- leaves -->
+            <path d="M200 390 Q135 335 115 255 Q158 288 200 368" fill="white" opacity=".65"/>
+            <path d="M200 390 Q265 335 285 255 Q242 288 200 368" fill="white" opacity=".55"/>
+            <path d="M200 290 Q128 238 108 158 Q153 198 200 272" fill="white" opacity=".6"/>
+            <path d="M200 290 Q272 238 292 158 Q247 198 200 272" fill="white" opacity=".52"/>
+            <path d="M200 200 Q152 148 148 82 Q178 128 200 186" fill="white" opacity=".55"/>
+            <path d="M200 200 Q248 148 252 82 Q222 128 200 186" fill="white" opacity=".48"/>
+            <!-- fiore -->
+            <circle cx="200" cy="82" r="20" fill="white" opacity=".72"/>
+            <circle cx="200" cy="82" r="11" fill="rgba(200,169,110,.9)"/>
+            <circle cx="200" cy="82" r="5"  fill="rgba(79,112,83,.8)"/>
+          </svg>
+        </div>
+        <div class="hero-badge">
+          <div class="hero-badge-ico">🌿</div>
+          <div><strong>Nutrizione Clinica</strong><span>approccio personalizzato</span></div>
+        </div>
+        <div class="hero-tag">Alimentazione · Benessere</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <section id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <span class="stat-num" data-target="5" data-suffix=".0 ★">0</span>
+          <span class="stat-lbl">Valutazione Google</span>
+        </div>
+        <div class="stat-item reveal d1">
+          <span class="stat-num" data-target="5" data-suffix=" rec.">0</span>
+          <span class="stat-lbl">Recensioni verificate</span>
+        </div>
+        <div class="stat-item reveal d2">
+          <span class="stat-num" data-target="100" data-suffix="%">0</span>
+          <span class="stat-lbl">Piani personalizzati</span>
+        </div>
+        <div class="stat-item reveal d3">
+          <span class="stat-num" data-target="48" data-suffix="h">0</span>
+          <span class="stat-lbl">Consegna piano alimentare</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHI SONO -->
+  <section id="chi-sono">
+    <div class="container">
+      <div class="chi-grid">
+        <div class="chi-frame-wrap reveal">
+          <div class="chi-frame">
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFO0uJN8sRTuVYbYSI4ABQF08ET-cvKIwKPLWDfdLQzWNSvf0iTrHDbASfDUA1oyC202ttB7FjqW44YvT1J23qo5_vguTrUwHhbZ93WQPtbvyJN6UmH7812xfE1TqU34vOO9E4CHYkm6Ro=w3024-h4032-k-no" alt="Studio Dott.ssa Alessia Cerullo" loading="lazy" />
+          </div>
+        </div>
+        <div class="reveal d2">
+          <p class="eyebrow">Chi sono</p>
+          <h2 class="display" style="margin:.9rem 0 1.2rem">Una professionista<br/>al tuo <em>fianco</em></h2>
+          <p class="chi-bio">Sono la Dott.ssa Alessia Cerullo, Biologa Nutrizionista iscritta all'Ordine Nazionale dei Biologi. Ho scelto la nutrizione clinica perché credo nel potere del cibo come strumento concreto di cura: non una dieta da seguire, ma uno stile di vita da costruire insieme, passo dopo passo.</p>
+          <p class="chi-bio" style="margin-top:.8rem">Mi aggiorno costantemente sulle ultime evidenze scientifiche, con una particolare attenzione alla <strong>sindrome dell'ovaio policistico</strong>, all'insulino-resistenza e alle patologie metaboliche. Ogni paziente è unico: il mio approccio parte sempre dall'ascolto, dalla storia clinica e dalle abitudini di vita reali.</p>
+          <p class="chi-bio" style="margin-top:.8rem">Ricevo presso il mio studio di <strong>Via Piacenza 26/B, Torino</strong>, in un ambiente accogliente e riservato, pensato per mettere ogni paziente a proprio agio fin dal primo incontro.</p>
+          <div class="tag-row">
+            <span class="tag">Nutrizione Clinica</span>
+            <span class="tag">Salute Ormonale</span>
+            <span class="tag">Patologie Metaboliche</span>
+            <span class="tag">Aggiornamento Continuo</span>
+            <span class="tag">Approccio Integrato</span>
+            <span class="tag">Ordine Nazionale Biologi</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIZI -->
+  <section id="servizi">
+    <div class="container">
+      <div class="sec-head center reveal">
+        <p class="eyebrow center">Cosa offro</p>
+        <h2 class="display" style="margin:.9rem 0 .8rem">I miei <em>servizi</em></h2>
+        <p class="lead">Ogni percorso inizia con un ascolto attento. Costruiamo insieme un piano che si adatti alla tua vita, non il contrario.</p>
+      </div>
+      <div class="servizi-grid">
+        <div class="svc-card reveal d1">
+          <div class="svc-ico">🌱</div>
+          <h3>Prima Visita</h3>
+          <p>Un incontro di 60 minuti dedicato all'ascolto: anamnesi alimentare e clinica, analisi delle abitudini di vita, composizione corporea e definizione condivisa degli obiettivi.</p>
+        </div>
+        <div class="svc-card reveal d2">
+          <div class="svc-ico">📋</div>
+          <h3>Piano Alimentare Personalizzato</h3>
+          <p>Uno schema nutrizionale costruito su di te: pensato attorno alle tue preferenze, routine quotidiana ed esigenze cliniche. Consegnato entro 48 ore dalla visita.</p>
+        </div>
+        <div class="svc-card reveal d3">
+          <div class="svc-ico">🔄</div>
+          <h3>Follow-up e Monitoraggio</h3>
+          <p>Visite periodiche per valutare i progressi, rilevare ostacoli e adattare il piano. Il supporto continuativo è ciò che trasforma un piano in un cambiamento duraturo.</p>
+        </div>
+        <div class="svc-card reveal d4">
+          <div class="svc-ico">🩺</div>
+          <h3>Nutrizione per Condizioni Specifiche</h3>
+          <p>Protocolli evidence-based per sindrome dell'ovaio policistico, insulino-resistenza, dislipidemia, iperuricemia, ipotiroidismo e altre condizioni metaboliche e ormonali.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERCORSO -->
+  <section id="percorso">
+    <div class="container">
+      <div class="sec-head center reveal">
+        <p class="eyebrow center">Come funziona</p>
+        <h2 class="display" style="margin:.9rem 0 .8rem">Il tuo <em>percorso</em> in 4 passi</h2>
+        <p class="lead">Un processo chiaro, trasparente e costruito intorno a te.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step reveal d1">
+          <div class="step-n">01</div>
+          <h4>Primo Contatto</h4>
+          <p>Scrivimi su WhatsApp o prenota online. Ti rispondo entro 24 ore per fissare la data della prima visita.</p>
+        </div>
+        <div class="step reveal d2">
+          <div class="step-n">02</div>
+          <h4>Prima Visita</h4>
+          <p>60 minuti dedicati all'ascolto: storia clinica, abitudini alimentari, composizione corporea e obiettivi.</p>
+        </div>
+        <div class="step reveal d3">
+          <div class="step-n">03</div>
+          <h4>Piano su Misura</h4>
+          <p>Ricevi il tuo piano alimentare personalizzato entro 48 ore, con indicazioni pratiche e ricette.</p>
+        </div>
+        <div class="step reveal d4">
+          <div class="step-n">04</div>
+          <h4>Supporto Continuo</h4>
+          <p>Follow-up regolari per monitorare i progressi, adattare il piano e mantenerti motivato/a nel tempo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROCCIO -->
+  <section id="approccio">
+    <div class="container">
+      <div class="appr-grid">
+        <div class="reveal">
+          <p class="eyebrow">Il mio metodo</p>
+          <h2 class="display" style="margin:.9rem 0 .5rem">Un approccio<br/><em>centrato su di te</em></h2>
+          <div class="appr-list">
+            <div class="appr-item">
+              <div class="appr-num">01</div>
+              <div>
+                <h4>Ascolto Prima di Tutto</h4>
+                <p>Ogni visita inizia con un'anamnesi approfondita: la tua storia clinica, le tue difficoltà e gli obiettivi che senti davvero tuoi. Solo così posso costruire qualcosa che funzioni per te.</p>
+              </div>
+            </div>
+            <div class="appr-item">
+              <div class="appr-num">02</div>
+              <div>
+                <h4>Evidenza Scientifica Aggiornata</h4>
+                <p>Mi formo costantemente: letteratura peer-reviewed, congressi di nutrizione clinica e aggiornamenti specialistici. Le raccomandazioni che ricevi sono sempre fondate su dati validati e attuali.</p>
+              </div>
+            </div>
+            <div class="appr-item">
+              <div class="appr-num">03</div>
+              <div>
+                <h4>Flessibilità e Adattamento</h4>
+                <p>La vita cambia: lavoro, famiglia, stagioni, stress. Il tuo piano alimentare deve sapersi adattare. Ogni follow-up è un'occasione per ricalibrare e migliorare il percorso in modo concreto.</p>
+              </div>
+            </div>
+            <div class="appr-item">
+              <div class="appr-num">04</div>
+              <div>
+                <h4>Sostenibilità, Non Restrizione</h4>
+                <p>Non credo nelle diete punitive. Il mio obiettivo è aiutarti a costruire un rapporto equilibrato e sereno con il cibo, che duri nel tempo — non solo fino alla prossima visita.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal d2">
+          <div class="appr-quote">
+            <blockquote>"Non esistono diete universali. Esiste il tuo corpo, la tua storia, il tuo equilibrio da trovare."</blockquote>
+            <cite>Dott.ssa Alessia Cerullo</cite>
+            <div class="appr-chips">
+              <span class="chip">Nutrizione Clinica</span>
+              <span class="chip">Salute Ormonale e Metabolica</span>
+              <span class="chip">Approccio Olistico</span>
+              <span class="chip">Benessere a Lungo Termine</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECENSIONI -->
+  <section id="recensioni">
+    <div class="container">
+      <div class="sec-head center reveal">
+        <p class="eyebrow center">Cosa dicono</p>
+        <h2 class="display" style="margin:.9rem 0 .8rem">Le <em>parole</em> dei pazienti</h2>
+        <p class="lead">Esperienze reali di chi ha scelto un percorso nutrizionale su misura.</p>
+        <div style="display:flex;justify-content:center;margin-top:1rem;">
+          <div class="google-badge">
+            <div class="g-logo"><span class="gb">G</span><span class="gr">o</span><span class="gy">o</span><span class="gb">g</span><span class="gg">l</span><span class="gr">e</span></div>
+            <div style="display:flex;gap:2px"><span style="color:var(--gold)">★</span><span style="color:var(--gold)">★</span><span style="color:var(--gold)">★</span><span style="color:var(--gold)">★</span><span style="color:var(--gold)">★</span></div>
+            <span>5,0 · 5 recensioni</span>
+          </div>
+        </div>
+      </div>
+      <div class="rec-grid">
+        <div class="rec-card reveal d1">
+          <div class="rec-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <p class="rec-text">"Ho trovato nella Dott.ssa Cerullo una professionista eccezionale. Mi ha seguita con grande competenza e attenzione, costruendo un piano alimentare davvero adatto alla mia situazione. Finalmente mi sento ascoltata e supportata nel mio percorso."</p>
+          <div class="rec-author">
+            <div class="rec-avatar">G</div>
+            <div><strong>Giulia</strong><span>Recensione Google verificata</span></div>
+          </div>
+        </div>
+        <div class="rec-card reveal d2">
+          <div class="rec-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <p class="rec-text">"Professionista preparatissima e sempre aggiornata. La consigliamo a tutte le nostre clienti. Risultati concreti e approccio umano: una combinazione rara."</p>
+          <div class="rec-author">
+            <div class="rec-avatar" style="background:linear-gradient(135deg,var(--gold),#e8c98a)">E</div>
+            <div><strong>Elestetica Daniello</strong><span>Recensione Google verificata</span></div>
+          </div>
+        </div>
+        <div class="rec-card reveal d3">
+          <div class="rec-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <p class="rec-text">"Mi sono affidato alla Dott.ssa Cerullo per gestire alcuni problemi metabolici e non potrei essere più soddisfatto. Spiega tutto con grande chiarezza e il piano alimentare è equilibrato e sostenibile."</p>
+          <div class="rec-author">
+            <div class="rec-avatar" style="background:linear-gradient(135deg,var(--sage-dk),var(--sage))">U</div>
+            <div><strong>Umberto Burdese</strong><span>Recensione Google verificata</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRENOTA -->
+  <section id="prenota">
+    <div class="container">
+      <div class="sec-head center reveal">
+        <p class="eyebrow center">Prenota online</p>
+        <h2 class="display" style="margin:.9rem 0 .8rem">Scegli data e <em>orario</em></h2>
+        <p class="lead">Seleziona il giorno e l'orario che preferisci. Riceverai conferma direttamente su WhatsApp.</p>
+      </div>
+      <div class="prenota-grid">
+        <div class="reveal">
+          <div class="cal-wrap">
+            <div class="cal-head">
+              <button class="cal-nav-btn" id="calPrev">&#8249;</button>
+              <h3 id="calTitle">—</h3>
+              <button class="cal-nav-btn" id="calNext">&#8250;</button>
+            </div>
+            <div class="cal-grid" id="calGrid"></div>
+            <div class="slots-box">
+              <p class="slots-lbl" id="slotsLbl">Seleziona un giorno per vedere gli orari</p>
+              <div class="slots-row" id="slotsRow"></div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal d2">
+          <div class="bform-wrap">
+            <h3>Conferma la tua <em>prenotazione</em></h3>
+            <p class="bform-sub">Compila il form e ti rispondo su WhatsApp per conferma.</p>
+            <div class="bsummary">
+              <span>📅 <strong id="sumData">Nessuna data selezionata</strong></span>
+              <span>🕐 <strong id="sumOra">Nessun orario selezionato</strong></span>
+            </div>
+            <form id="bookingForm" novalidate>
+              <div class="fgrid">
+                <div class="ff"><label>Nome *</label><input type="text" id="b-nome" placeholder="Maria" required /></div>
+                <div class="ff"><label>Cognome *</label><input type="text" id="b-cogn" placeholder="Rossi" required /></div>
+                <div class="ff"><label>Telefono *</label><input type="tel" id="b-tel" placeholder="333 123 4567" required /></div>
+                <div class="ff"><label>Email</label><input type="email" id="b-mail" placeholder="maria@email.it" /></div>
+                <div class="ff full"><label>Tipo di visita *</label>
+                  <select id="b-tipo" required>
+                    <option value="" disabled selected>Seleziona…</option>
+                    <option>Prima visita</option>
+                    <option>Visita di follow-up</option>
+                    <option>Consulenza – Sindrome dell'ovaio policistico</option>
+                    <option>Consulenza – Patologia metabolica</option>
+                    <option>Revisione piano alimentare</option>
+                  </select>
+                </div>
+                <div class="ff full"><label>Note aggiuntive</label><textarea id="b-note" placeholder="Allergie, intolleranze o altre informazioni utili…"></textarea></div>
+              </div>
+              <button type="submit" class="btn btn-wa" style="width:100%;margin-top:1rem;">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.857L.054 23.454a.5.5 0 00.492.596.499.499 0 00.136-.019l5.7-1.493A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.815 9.815 0 01-5.027-1.383l-.36-.214-3.733.978.995-3.63-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+                Conferma su WhatsApp
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <div class="sec-head center reveal">
+        <p class="eyebrow center">Domande frequenti</p>
+        <h2 class="display" style="margin:.9rem 0 .8rem">Hai dei <em>dubbi?</em></h2>
+        <p class="lead">Risposte chiare alle domande più comuni.</p>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-q"><span class="faq-q-text">Qual è la differenza tra biologo nutrizionista, dietista e dietologo?</span><div class="faq-ico">+</div></button>
+          <div class="faq-a"><p>Il biologo nutrizionista è laureato in Scienze Biologiche e abilitato all'esercizio della professione tramite esame di Stato. Come il dietista, elabora piani alimentari personalizzati. Il medico dietologo, invece, può prescrivere farmaci. Tutte e tre le figure sono competenti e regolamentate — la scelta dipende dalle tue esigenze specifiche.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span class="faq-q-text">Quanto dura la prima visita e cosa devo portare?</span><div class="faq-ico">+</div></button>
+          <div class="faq-a"><p>La prima visita dura circa 60 minuti. Ti chiedo di portare eventuali esami del sangue recenti (entro 6 mesi), referti medici rilevanti e, se possibile, un diario alimentare degli ultimi 3 giorni. Più informazioni hai, più il piano sarà preciso e personalizzato.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span class="faq-q-text">Quante visite servono per vedere i risultati?</span><div class="faq-ico">+</div></button>
+          <div class="faq-a"><p>Dipende dall'obiettivo. Per il benessere generale, i primi risultati si percepiscono dopo 3–4 settimane. Per patologie metaboliche o ormonali il percorso è più graduale: tipicamente 3–6 mesi di follow-up regolari. Il cambiamento duraturo richiede tempo — ma ogni passo conta.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span class="faq-q-text">Il piano alimentare è adatto a chi ha intolleranze o allergie?</span><div class="faq-ico">+</div></button>
+          <div class="faq-a"><p>Assolutamente sì. Ogni piano viene costruito tenendo conto di intolleranze (lattosio, glutine, nichel…), allergie certificate e preferenze personali, incluse diete vegetariane e vegane. Non esistono restrizioni che non possano essere gestite con la giusta pianificazione.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span class="faq-q-text">Le visite si svolgono solo in studio o anche online?</span><div class="faq-ico">+</div></button>
+          <div class="faq-a"><p>Le visite si svolgono principalmente in studio a Torino (Via Piacenza 26/B). Per le visite di follow-up è possibile valutare la modalità da remoto — contattami direttamente per concordarlo.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span class="faq-q-text">Quanto costa una visita?</span><div class="faq-ico">+</div></button>
+          <div class="faq-a"><p>Il costo viene comunicato al momento della prenotazione e varia in base al tipo di visita. Contattami via WhatsApp per ricevere tutte le informazioni. Rilascio regolare ricevuta per ogni prestazione.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATTI -->
+  <section id="contatti">
+    <div class="container">
+      <div class="contatti-grid">
+        <div class="reveal">
+          <p class="eyebrow">Dove trovarmi</p>
+          <h2 class="display" style="margin:.9rem 0 1rem">Inizia il tuo<br/><em>percorso</em> oggi</h2>
+          <p class="lead">Ricevo su appuntamento a Torino. Se stai cercando un percorso nutrizionale serio e su misura, sono qui per te.</p>
+          <div class="info-list">
+            <div class="info-row"><div class="info-ico">📍</div><div><strong>Studio</strong><p>Via Piacenza 26/B, 10127 Torino (TO)</p></div></div>
+            <div class="info-row"><div class="info-ico">📞</div><div><strong>Telefono</strong><p><a href="tel:+393793506892">379 350 6892</a></p></div></div>
+            <div class="info-row"><div class="info-ico">💬</div><div><strong>WhatsApp</strong><p><a href="https://wa.me/393793506892" target="_blank" rel="noopener">Scrivimi direttamente</a></p></div></div>
+            <div class="info-row"><div class="info-ico">🕐</div><div><strong>Orari</strong><p>Su appuntamento · Lun–Sab</p></div></div>
+          </div>
+          <div class="cta-card">
+            <p>Prenota la tua prima visita o scrivimi per qualsiasi domanda.</p>
+            <a href="#prenota" class="btn btn-wa" style="width:100%;margin-bottom:.6rem;">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Prenota online
+            </a>
+            <a href="tel:+393793506892" class="btn btn-ghost" style="width:100%;">📞 Chiama: 379 350 6892</a>
+          </div>
+        </div>
+        <div class="reveal d2">
+          <div class="map-wrap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2818.8!2d7.6463714!3d45.0193609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f15!3m3!1m2!1s0x47881374ccfc0cb7%3A0x9076c3c169144d23!2sDott.ssa%20Alessia%20Cerullo%20-%20Biologa%20Nutrizionista!5e0!3m2!1sit!2sit" title="Studio Dott.ssa Alessia Cerullo – Via Piacenza 26/B, Torino" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Dott.ssa Alessia Cerullo</div>
+          <p class="footer-tagline">Biologa Nutrizionista · Torino<br/>Piani alimentari personalizzati per il tuo benessere autentico.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigazione</h4>
+          <ul>
+            <li><a href="#chi-sono">Chi sono</a></li>
+            <li><a href="#servizi">Servizi</a></li>
+            <li><a href="#approccio">Metodo</a></li>
+            <li><a href="#recensioni">Recensioni</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contatti</h4>
+          <ul>
+            <li><a href="tel:+393793506892">379 350 6892</a></li>
+            <li><a href="https://wa.me/393793506892" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="#contatti">Via Piacenza 26/B<br/>10127 Torino</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2025 Dott.ssa Alessia Cerullo · Biologa Nutrizionista · Tutti i diritti riservati</span>
+        <a href="https://wa.me/393793506892" target="_blank" rel="noopener" class="footer-wa">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.857L.054 23.454a.5.5 0 00.492.596.499.499 0 00.136-.019l5.7-1.493A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.815 9.815 0 01-5.027-1.383l-.36-.214-3.733.978.995-3.63-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          Scrivimi su WhatsApp
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WA -->
+  <a href="https://wa.me/393793506892" target="_blank" rel="noopener" class="wa-float" aria-label="Scrivimi su WhatsApp">
+    <svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.857L.054 23.454a.5.5 0 00.492.596.499.499 0 00.136-.019l5.7-1.493A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.815 9.815 0 01-5.027-1.383l-.36-.214-3.733.978.995-3.63-.235-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+    <span>Scrivimi ora</span>
+  </a>
+
+  <!-- SCROLL TOP -->
+  <button class="scroll-top" id="scrollTop" aria-label="Torna in cima">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script>
+  /* ═══ PROGRESS BAR ═══ */
+  const prog = document.getElementById('progress');
+  window.addEventListener('scroll', () => {
+    const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
+    prog.style.width = Math.min(pct, 100) + '%';
+  }, { passive: true });
+
+  /* ═══ NAV ═══ */
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 20), { passive: true });
+
+  const hamburger = document.getElementById('hamburger');
+  const navLinks  = document.getElementById('navLinks');
+  hamburger.addEventListener('click', () => {
+    const o = navLinks.classList.toggle('open');
+    hamburger.children[0].style.transform = o ? 'rotate(45deg) translate(5px,5px)' : '';
+    hamburger.children[1].style.opacity   = o ? '0' : '1';
+    hamburger.children[2].style.transform = o ? 'rotate(-45deg) translate(5px,-5px)' : '';
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    hamburger.children[0].style.transform = '';
+    hamburger.children[1].style.opacity = '1';
+    hamburger.children[2].style.transform = '';
+  }));
+
+  /* ═══ REVEAL ═══ */
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+  /* ═══ COUNTER ANIMATION ═══ */
+  const counterObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el  = e.target;
+      const target = +el.dataset.target;
+      const suffix = el.dataset.suffix || '';
+      const dur  = 1400;
+      const start = performance.now();
+      const tick = now => {
+        const p = Math.min((now - start) / dur, 1);
+        const ease = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(ease * target) + suffix;
+        if (p < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+      counterObs.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('[data-target]').forEach(el => counterObs.observe(el));
+
+  /* ═══ CALENDARIO ═══ */
+  (function(){
+    const MESI = ['Gennaio','Febbraio','Marzo','Aprile','Maggio','Giugno','Luglio','Agosto','Settembre','Ottobre','Novembre','Dicembre'];
+    const GIORNI = ['domenica','lunedì','martedì','mercoledì','giovedì','venerdì','sabato'];
+    const SLOTS = { 1:['09:00','10:00','11:00','14:30','15:30'], 2:['09:00','10:00','11:00','14:30','15:30','16:30'], 3:['09:00','10:00','11:00','14:30','15:30'], 4:['09:00','10:00','11:00','14:30','15:30','16:30'], 5:['09:00','10:00','11:00','14:30'], 6:['09:00','10:00','11:00'] };
+    const CHIUSI = [];
+
+    let vy = new Date().getFullYear(), vm = new Date().getMonth();
+    let selDate = null, selSlot = null;
+
+    const $ = id => document.getElementById(id);
+    const calGrid = $('calGrid'), slotsRow = $('slotsRow'), slotsLbl = $('slotsLbl');
+    const sumData = $('sumData'), sumOra = $('sumOra');
+
+    function render() {
+      $('calTitle').textContent = MESI[vm] + ' ' + vy;
+      calGrid.innerHTML = '';
+      ['Lu','Ma','Me','Gi','Ve','Sa','Do'].forEach(d => {
+        const el = document.createElement('div'); el.className = 'cal-dow'; el.textContent = d; calGrid.appendChild(el);
+      });
+      const first = new Date(vy, vm, 1);
+      const offset = (first.getDay() + 6) % 7;
+      for (let i = 0; i < offset; i++) { const e = document.createElement('div'); e.className='cal-day emp'; calGrid.appendChild(e); }
+      const today = new Date(); today.setHours(0,0,0,0);
+      const days = new Date(vy, vm+1, 0).getDate();
+      for (let d = 1; d <= days; d++) {
+        const date = new Date(vy, vm, d);
+        const dow = date.getDay();
+        const ds  = date.toISOString().split('T')[0];
+        const el  = document.createElement('div'); el.className = 'cal-day'; el.textContent = d;
+        if (date.getTime() === today.getTime()) el.classList.add('today');
+        if (date < today || dow === 0 || CHIUSI.includes(ds)) { el.classList.add('dis'); }
+        else {
+          el.classList.add('avail');
+          if (selDate === ds) el.classList.add('sel');
+          el.addEventListener('click', () => selectDate(date, ds, dow));
+        }
+        calGrid.appendChild(el);
+      }
+    }
+
+    function selectDate(date, ds, dow) {
+      selDate = ds; selSlot = null;
+      sumData.textContent = GIORNI[dow].charAt(0).toUpperCase()+GIORNI[dow].slice(1)+' '+date.getDate()+' '+MESI[date.getMonth()]+' '+vy;
+      sumOra.textContent  = 'Nessun orario selezionato';
+      render();
+      const slots = SLOTS[dow] || [];
+      slotsLbl.textContent = 'Orari disponibili – ' + GIORNI[dow] + ' ' + date.getDate() + ' ' + MESI[date.getMonth()];
+      slotsRow.innerHTML = '';
+      if (!slots.length) { slotsRow.innerHTML = '<span style="font-size:.82rem;color:var(--ink-muted);font-style:italic">Nessuna disponibilità.</span>'; return; }
+      slots.forEach(s => {
+        const btn = document.createElement('button'); btn.type='button'; btn.className='slot'; btn.textContent=s;
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.slot').forEach(b => b.classList.remove('sel'));
+          btn.classList.add('sel'); selSlot = s; sumOra.textContent = s;
+        });
+        slotsRow.appendChild(btn);
+      });
+    }
+
+    $('calPrev').addEventListener('click', () => { vm--; if(vm<0){vm=11;vy--;} render(); });
+    $('calNext').addEventListener('click', () => { vm++; if(vm>11){vm=0;vy++;} render(); });
+    render();
+
+    $('bookingForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const nome = ($('b-nome').value.trim()+' '+$('b-cogn').value.trim()).trim();
+      const tel  = $('b-tel').value.trim();
+      const mail = $('b-mail').value.trim();
+      const tipo = $('b-tipo').value;
+      const note = $('b-note').value.trim();
+      if (!nome || !tel || !tipo) { alert('Compila i campi obbligatori: Nome, Cognome, Telefono e Tipo di visita.'); return; }
+      if (!selDate || !selSlot)   { alert('Seleziona una data e un orario dal calendario.'); return; }
+      let msg = `Salve Dott.ssa Cerullo,\n\nVorrei prenotare una visita:\n📅 *${sumData.textContent}* alle *${selSlot}*\n🩺 Tipo: ${tipo}\n\n👤 *${nome}*\n📞 ${tel}`;
+      if (mail) msg += `\n📧 ${mail}`;
+      if (note) msg += `\n📝 ${note}`;
+      msg += '\n\nGrazie!';
+      window.open('https://wa.me/393793506892?text='+encodeURIComponent(msg), '_blank');
+    });
+  })();
+
+  /* ═══ FAQ ═══ */
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.querySelector('.faq-q').addEventListener('click', () => {
+      const open = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+      if (!open) item.classList.add('open');
+    });
+  });
+
+  /* ═══ SCROLL TOP ═══ */
+  const stBtn = document.getElementById('scrollTop');
+  window.addEventListener('scroll', () => stBtn.classList.toggle('vis', window.scrollY > 400), { passive: true });
+  stBtn.addEventListener('click', () => window.scrollTo({ top:0, behavior:'smooth' }));
+
+  /* ═══ NAV ACTIVE LINK ═══ */
+  const sections  = document.querySelectorAll('section[id]');
+  const navAnchors= document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', () => {
+    let cur = '';
+    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 110) cur = s.id; });
+    navAnchors.forEach(a => { a.style.color = a.getAttribute('href') === '#'+cur ? 'var(--sage-dk)' : ''; });
+  }, { passive: true });
+  </script>
+</body>
+</html>
